@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://localhost/CarritodeCompras/admin.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>admin panel</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="./index_files/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="./index_files/style.css">
+
+</head>
+<body>
+   
+
+<header class="header">
+
+   <div class="flex">
+
+      <a href="http://localhost/CarritodeCompras/admin.php#" class="logo">Comidas Tec Alvarado</a>
+
+      <nav class="navbar">
+         <a href="http://localhost/CarritodeCompras/admin.php">Agregar Productos</a>
+         <a href="http://localhost/CarritodeCompras/products.php">Productos</a>
+      </nav>
+
+      
+      <a href="http://localhost/CarritodeCompras/cart.php" class="cart">Carrito <span>0</span> </a>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+   </div>
+
+</header>
+<div class="container">
+
+<section>
+
+<form action="http://localhost/CarritodeCompras/admin.php" method="post" class="add-product-form" enctype="multipart/form-data">
+   <h3>Agrega un nuevo producto</h3>
+   <input type="text" name="p_name" placeholder="Ingresa nombre del producto" class="box" required="">
+   <input type="number" name="p_price" min="0" placeholder="Ingresa el precio" class="box" required="">
+   <input type="file" name="p_image" accept="imagen/png, imagen/jpg, imagen/jpeg" class="box" required="">
+   <input type="submit" value="Agregar producto" name="add_product" class="btn">
+</form>
+
+</section>
+
+<section class="display-product-table">
+
+   <table>
+
+      <thead>
+         <tr><th>Imagen del producto</th>
+         <th>Nombre del producto</th>
+         <th>Precio del producto</th>
+         <th>Id</th>
+      </tr></thead>
+
+      <tbody>
+         
+         <tr>
+            <td><img src="./index_files/food-1.png" height="100" alt=""></td>
+            <td>Hamburgesa</td>
+            <td>$300/-</td>
+            <td>
+               <a href="http://localhost/CarritodeCompras/admin.php?delete=3" class="delete-btn" onclick="return confirm(&#39;Seguro que quiere elimiar el producto?&#39;);"> <i class="fas fa-trash"></i> Eliminar </a>
+               <a href="http://localhost/CarritodeCompras/admin.php?edit=3" class="option-btn"> <i class="fas fa-edit"></i> Actualizar </a>
+            </td>
+         </tr>
+
+         
+         <tr>
+            <td><img src="./index_files/food-2.png" height="100" alt=""></td>
+            <td>Pizza carnes frias</td>
+            <td>$500/-</td>
+            <td>
+               <a href="http://localhost/CarritodeCompras/admin.php?delete=4" class="delete-btn" onclick="return confirm(&#39;Seguro que quiere elimiar el producto?&#39;);"> <i class="fas fa-trash"></i> Eliminar </a>
+               <a href="http://localhost/CarritodeCompras/admin.php?edit=4" class="option-btn"> <i class="fas fa-edit"></i> Actualizar </a>
+            </td>
+         </tr>
+
+         
+         <tr>
+            <td><img src="./index_files/food-3.png" height="100" alt=""></td>
+            <td>Torta con jamon de tigre</td>
+            <td>$150/-</td>
+            <td>
+               <a href="http://localhost/CarritodeCompras/admin.php?delete=5" class="delete-btn" onclick="return confirm(&#39;Seguro que quiere elimiar el producto?&#39;);"> <i class="fas fa-trash"></i> Eliminar </a>
+               <a href="http://localhost/CarritodeCompras/admin.php?edit=5" class="option-btn"> <i class="fas fa-edit"></i> Actualizar </a>
+            </td>
+         </tr>
+
+         
+         <tr>
+            <td><img src="./index_files/food-4.png" height="100" alt=""></td>
+            <td>Sandwich de pavo real </td>
+            <td>$200/-</td>
+            <td>
+               <a href="http://localhost/CarritodeCompras/admin.php?delete=6" class="delete-btn" onclick="return confirm(&#39;Seguro que quiere elimiar el producto?&#39;);"> <i class="fas fa-trash"></i> Eliminar </a>
+               <a href="http://localhost/CarritodeCompras/admin.php?edit=6" class="option-btn"> <i class="fas fa-edit"></i> Actualizar </a>
+            </td>
+         </tr>
+
+         
+         <tr>
+            <td><img src="./index_files/food-6.png" height="100" alt=""></td>
+            <td>Orden de papas importadas de Francia</td>
+            <td>$300/-</td>
+            <td>
+               <a href="http://localhost/CarritodeCompras/admin.php?delete=7" class="delete-btn" onclick="return confirm(&#39;Seguro que quiere elimiar el producto?&#39;);"> <i class="fas fa-trash"></i> Eliminar </a>
+               <a href="http://localhost/CarritodeCompras/admin.php?edit=7" class="option-btn"> <i class="fas fa-edit"></i> Actualizar </a>
+            </td>
+         </tr>
+
+         
+         <tr>
+            <td><img src="./index_files/food-5.png" height="100" alt=""></td>
+            <td>Coocoo Bebida de Cola</td>
+            <td>$25/-</td>
+            <td>
+               <a href="http://localhost/CarritodeCompras/admin.php?delete=8" class="delete-btn" onclick="return confirm(&#39;Seguro que quiere elimiar el producto?&#39;);"> <i class="fas fa-trash"></i> Eliminar </a>
+               <a href="http://localhost/CarritodeCompras/admin.php?edit=8" class="option-btn"> <i class="fas fa-edit"></i> Actualizar </a>
+            </td>
+         </tr>
+
+               </tbody>
+   </table>
+
+</section>
+
+<section class="edit-form-container">
+
+   
+</section>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="./index_files/script.js.descarga"></script>
+
+
+</body></html>
